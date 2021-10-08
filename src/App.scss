@@ -1,0 +1,191 @@
+
+.Availability{
+    right: 0;
+    position: absolute;
+}
+.App{
+    background-image: url("./images/officedesk2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.header{
+    height: 95vh;
+    color:black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: wrap;
+    justify-content: space-around;
+    .bgBox{
+            // background-color: red;
+            color: rgb(97, 97, 97);
+            display: flex;
+            flex-wrap: wrap;
+            flex-flow: wrap;
+            justify-content: center;
+            align-items: center;
+
+            .intro{
+                padding:1rem 2rem;
+                font-family: 'roboto';
+                background-color: rgba(232, 232, 232, 0.549);
+            }
+    }
+}
+
+
+$container-padding:5em 0rem;
+$container-bg:white;
+
+.whoami-container{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: wrap;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+    background-color: $container-bg;
+    padding: $container-padding;
+    .about-img{
+        border-radius: 100%;
+    }
+    .aboutme{
+        max-width: 500px;
+        color:dimgray;
+        padding: 15px;
+    }
+}
+
+.techstack-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: wrap;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+    padding:$container-padding;
+    background-color: $container-bg;
+
+    .skills-list-con{
+        display: flex;
+        flex-flow: wrap;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: auto;
+        background-color: rgb(49, 49, 49);
+        color:white;
+        padding:1rem;
+    
+        .skills-list{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+            padding: 3px;
+            margin:3px;
+        }
+    }
+  
+}
+
+.projects-con{
+    padding: $container-padding;
+    justify-content: center;
+    .projects-con-list{
+        padding: $container-padding;
+        justify-content: space-evenly;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-flow: wrap;
+        width: 100%;
+        .projects-card{
+            margin:5px;
+        }
+    }
+}
+
+.certificate-con{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: wrap;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+    padding:$container-padding;
+    background-color: $container-bg;
+    .certificate-text-con{
+
+    }
+    .certificate-list-con{
+        max-width: 700px;
+        max-height: 500px;
+        height: 500px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .carousel-con{
+            width: 100%;
+            height: 100%;
+            padding: 1rem;
+            .carousel-item{
+                height: 100%;
+                
+                .cert-images{
+                  height: 100%;
+                  max-height: 450px;
+                  width: 100%;
+                }
+            }
+        }     
+    }
+}
+
+
+.contact-con{
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    padding:$container-padding;
+    .contact-con-text{
+        padding:1rem;
+
+    }
+    .contact-con-form{
+        padding: 1rem;
+        width: 100%;
+        max-width: 500px;
+        background-color: rgb(255, 255, 255);
+        .textfield-form{
+            width: 100%;
+            padding:1rem;
+            display: flex;
+            flex-direction: column;
+            .textArea{
+                height: 300px;
+                background-color: inherit;
+            }
+            .textField{
+                
+            }
+            .buttonSend{
+                width: 100px;
+            }
+        }
+    }
+}
+
+
+// @import "~bootstrap/scss/bootstrap";

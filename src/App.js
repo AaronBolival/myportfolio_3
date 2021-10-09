@@ -4,9 +4,10 @@ import MiniDrawer from './drawer';
 import About from './about';
 
 
-function App() {
+const App = () => {
   return (
     <div className="App">
+      
       <MiniDrawer/>
     </div>
   );

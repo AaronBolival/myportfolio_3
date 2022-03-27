@@ -22,7 +22,16 @@ import sqlcert from "./certificates/sql.jpg";
 import webdevtesda from "./certificates/webdevtesda.jpg";
 import webdevtraining from "./certificates/webdevtraining.jpg";
 
+import designthinking from "./certificates/designthinking.png";
+
 const certificates = [
+    {
+        name:"Design Thinking",
+        images:designthinking,
+        href:"",
+        desc:"",
+        category:""
+    },
     {
         name:"Responsive Web",
         images:responsiveweb,

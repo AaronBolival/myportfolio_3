@@ -8,12 +8,16 @@ import aaron from "./images/aaron.jpg";
 import Card from '@mui/material/Card';
 import CardMedia from '@mui/material/CardMedia';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
+
 export default function About(){
     return(
-        <Box className="whoami-container" container id="about">
+        <Box className="whoami-container" container id="about" >
             <Box>
                 {/* <Typography variant="h4" align="center">Who am I?</Typography> */}
-                <Card sx={{ maxWidth: 300 }} className="about-img">
+                <Card sx={{ maxWidth: 300 }} className="about-img" >
                     <CardMedia
                         component="img"
                         image={aaron}

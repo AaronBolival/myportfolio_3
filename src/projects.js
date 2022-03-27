@@ -13,6 +13,10 @@ import {CardActionArea, CardActions } from '@mui/material';
 import covidImg1 from "./projects-image/covidImg1.png";
 import portfolioImgv1 from "./projects-image/portfolioImgv1.png";
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
+
 const projects = [
     {
         name:"Portfolio V1",
@@ -34,11 +38,12 @@ export default function Projects(){
     return(
         <Box className="projects-con" id="projects">
             <Typography variant="h2" align="center">Projects | Simple Tasks</Typography>
+            <Divider/>
             <Container className="projects-con-list">
                 {
                     projects.map(project=>{
                         return(
-                            <Card sx={{ maxWidth: 445 }} className="projects-card">
+                            <Card sx={{ maxWidth: 445 }} className="projects-card"  data-aos="zoom-in">
                                 <CardMedia
                                     component="img"
                                     image={project.images}

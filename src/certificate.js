@@ -22,7 +22,7 @@ import sqlcert from "./certificates/sql.jpg";
 import webdevtesda from "./certificates/webdevtesda.jpg";
 import webdevtraining from "./certificates/webdevtraining.jpg";
 
-import designthinking from "./certificates/designthinking.png";
+import designthinkingsap from "./certificates/designthinking.png";
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -31,7 +31,7 @@ AOS.init();
 const certificates = [
     {
         name:"Design Thinking",
-        images:designthinking,
+        images:designthinkingsap,
         href:"",
         desc:"",
         category:""

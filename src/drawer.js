@@ -38,6 +38,10 @@ import Projects from './projects';
 import Certificate from './certificate';
 import Contact from './contact';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
+
 const label="Available";
 const color="success";
 
@@ -214,9 +218,9 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' 
         <DrawerHeader />
         
         <Box className="header" container id="home">
-            <Box container className="bgBox">
-            </Box>
-            <Box container className="bgBox">
+            {/* <Box container className="bgBox">
+            </Box> */}
+            <Box container className="bgBox" data-aos="zoom-in">
               <Box>
                 <Typography variant="h1" className="intro">Hi I am Aaron</Typography>
             

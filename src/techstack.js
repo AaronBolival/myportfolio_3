@@ -22,6 +22,10 @@ import CardMedia from '@mui/material/CardMedia';
 
 import Techskills from "./images/techskills.gif";
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
+
 const skills = [
     {
         name:"PHP",
@@ -68,6 +72,8 @@ const skills = [
         images:materialui
     },
 ]
+
+
 export default function Techstack(){
     return(
         <Box className="techstack-container" container id="skill">
@@ -96,7 +102,7 @@ export default function Techstack(){
                         
                         return (
                             <>
-                            <Box className="skills-list">
+                            <Box className="skills-list" >
                                 
                                 <Typography variant="subtitle1" align="center">{skill.name}</Typography>
                                 <img src={skill.images} width="50" />

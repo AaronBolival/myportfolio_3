@@ -22,6 +22,10 @@ import sqlcert from "./certificates/sql.jpg";
 import webdevtesda from "./certificates/webdevtesda.jpg";
 import webdevtraining from "./certificates/webdevtraining.jpg";
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
+
 const certificates = [
     {
         name:"Responsive Web",
@@ -101,16 +105,18 @@ export default function Certificate(){
                 </Card>
             </Box>
             <Box className="certificate-list-con" item>
-                    <Carousel className="carousel-con">
+                    <Carousel className="carousel-con h-100">
                     {
                         certificates.map(certificate=>{
                             return(
-                            <Carousel.Item interval={1000} className="carousel-item">
-                                <img
-                                className="d-block w-100 h-100"
-                                src={certificate.images}    
-                                className="cert-images"
-                                />
+                            <Carousel.Item interval={3000} className="carousel-item">
+                                <figure className="fig">
+                                    <img
+                                    className="d-block w-100 h-100"
+                                    src={certificate.images}    
+                                    className="cert-images"
+                                    />
+                                </figure>
                                 {/* <Carousel.Caption>
                                 <h3>First slide label</h3>
                                 <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>

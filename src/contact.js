@@ -17,6 +17,9 @@ import emailjs from 'emailjs-com';
 
 import { Input,FormControl,TextField } from '@mui/material';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 function sendEmail(e) {
     e.preventDefault();

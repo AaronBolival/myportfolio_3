@@ -231,7 +231,7 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' 
                 <Typography variant="h4" className="intro" color="secondary">            
                   <Typewriter
                     options={{
-                        strings: ['Software Engineer', 'Software Developer', 'Application Developer','Web Developer'],
+                        strings: ['ABAP Developer', 'Software Developer', 'Application Developer','Web Developer'],
                         autoStart: true,
                         loop: true,
                     }}/> 

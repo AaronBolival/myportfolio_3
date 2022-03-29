@@ -42,8 +42,8 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 AOS.init();
 
-const label="Not Available";
-const color="success";
+const label="Currently Working in DXC";
+const color="error";
 
 const navlinks = [
   {

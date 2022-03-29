@@ -3,6 +3,8 @@ import './App.scss';
 import {Container,Box,Grid,Button} from '@mui/material/';
 import Typography from '@mui/material/Typography';
 
+import sapabap from "./progskills/sapabap.png";
+
 import php from "./progskills/php.png";
 import csharp from "./progskills/csharp.png";
 import java from "./progskills/java.png";
@@ -27,6 +29,10 @@ import 'aos/dist/aos.css';
 AOS.init();
 
 const skills = [
+    {
+        name:"ABAP",
+        images:sapabap
+    },
     {
         name:"PHP",
         images:php
